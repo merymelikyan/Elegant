@@ -1,0 +1,515 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block home_template %} 
+  
+  <!-- MAIN -->
+  <main role="main">    
+    <!-- Main Header -->
+    <header>
+      <div class="carousel-default owl-carousel carousel-main carousel-nav-white background-dark text-center">
+        <div class="item">
+          <div class="s-12">
+            <img src="{{header_text.image.url}}" alt="">
+            <div class="carousel-content">
+              <div class="content-center-vertical line">
+                <div class="margin-top-bottom-80">
+                  <!-- Title -->
+                  <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">
+                    {{header_text.title1}}<br>{{header_text.title2}}</h1>
+                  <div class="s-12 m-10 l-8 center">
+                    <p class="text-white text-size-14 margin-bottom-40">{{header_text.description}}</p></div>
+                  <div class="line">
+                    <div class="s-12 m-12 l-3 center">
+                      <a class="button button-white-stroke s-12" href="/">Get Started Now</a>
+                    </div>       
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>              
+      </div>               
+    </header>
+    
+    <!-- Section 1 -->
+    <section class="section-small-padding background-white text-center"> 
+      <div class="line">
+        <div class="margin">
+          <div class="s-12 m-12 l-4 margin-m-bottom">
+            <div class="padding-2x block-bordered">
+              <i class="icon-sli-shield icon3x text-dark center margin-bottom-30"></i>
+              <h2 class="text-thin">Unlimited Color Variants</h2>
+              <p class="margin-bottom-30">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+              <a class="button button-dark-stroke text-size-12" href="/">GET MORE INFO</a>
+            </div>
+          </div>
+          <div class="s-12 m-12 l-4 margin-m-bottom">
+            <div class="padding-2x block-bordered">
+              <i class="icon-sli-umbrella icon3x text-dark center margin-bottom-30"></i>
+              <h2 class="text-thin">Parallax Background</h2>
+              <p class="margin-bottom-30">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+              <a class="button button-dark-stroke text-size-12" href="/">GET MORE INFO</a>
+            </div>
+          </div>
+          <div class="s-12 m-12 l-4 margin-m-bottom">
+            <div class="padding-2x block-bordered">
+              <i class="icon-sli-home icon3x text-dark center margin-bottom-30"></i>
+              <h2 class="text-thin">Clean Modern Code</h2>
+              <p class="margin-bottom-30">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+              <a class="button button-dark-stroke text-size-12" href="/">GET MORE INFO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section 1 -->
+    <section class="section">
+      <div class="line">
+        <h2 class="text-size-50  text-m-size-40 text-center">About Us</h2>
+        <hr class="break-small background-primary break-center">
+      </div>
+      <div class="line">
+        <div class="margin">  
+          <div class="s-12 m-12 l-2">
+            <p class="h1 text-size-30 margin-m-bottom-30 text-primary text-line-height-1 text-right">We Are<br> Web Design Heroes</p>
+          </div>
+          <div class="s-12 m-12 l-5">
+            <p class="text-size-14 margin-m-bottom-30 text-dark">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica. Dolor in hendrerit in vulputate velit esse molestie consequat. Mirum est notare quam littera gothica. </p>
+          </div>
+          <div class="s-12 m-12 l-5">
+            <p class="text-size-14 text-dark">Mirum est notare quam littera gothica. Dolor in hendrerit in vulputate velit esse molestie consequat. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+          </div>
+        </div>
+      </div>    
+    </section>
+    
+    <!-- Section 2 -->
+    <section class="full-width">
+      <div class="s-12 m-12 l-6">  
+        <img src="{% static "img/img-12.jpg" %}" alt="">
+      </div>
+      <div class="s-12 m-12 l-6">
+        <div class="padding-2x">
+          <div class="line">
+            <div class="float-left">
+              <i class="icon-sli-drop icon3x text-dark"></i>
+            </div>
+            <div class="margin-left-60 margin-bottom-30">
+              <h3 class="text-size-25 margin-bottom-0">Unlimited Color Variants</h3>
+              <p class="text-dark">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.<br> Vel illum dolore eu feugiat nulla facilisis.</p>            
+            </div>
+          </div>
+          
+          <div class="line">
+            <div class="float-left">
+              <i class="icon-sli-screen-smartphone icon3x text-dark"></i>
+            </div>
+            <div class="margin-left-60 margin-bottom-30">
+              <h3 class="text-size-25 margin-bottom-0">Responsive Layoute</h3>
+              <p class="text-dark">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>            
+            </div>
+          </div>
+          
+          <div class="line">
+            <div class="float-left">
+              <i class="icon-sli-heart icon3x text-dark"></i>
+            </div>
+            <div class="margin-left-60 margin-bottom-30">
+              <h3 class="text-size-25 margin-bottom-0">Clean Minimalistic Design</h3>
+              <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.<br> Vel illum dolore eu feugiat nulla facilisis.</p>            
+            </div>
+          </div>
+          
+          <div class="line">
+            <div class="float-left">
+              <i class="icon-sli-chart icon3x text-dark"></i>
+            </div>
+            <div class="margin-left-60 margin-bottom-30">
+              <h3 class="text-size-25 margin-bottom-0">Tons of Animated Elements</h3>
+              <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>            
+            </div>
+          </div>
+          
+          <div class="line">
+            <div class="float-left">
+              <i class="icon-sli-globe-alt icon3x text-dark"></i>
+            </div>
+            <div class="margin-left-60">
+              <h3 class="text-size-25 margin-bottom-0">And many more...</h3>
+              <p class="text-dark">Nam liber tempor cum soluta nobis eleifend. Duis autem vel eum iriure dolor<br> in hendrerit in vulputate velit esse molestie consequat.</p>            
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section 3 -->
+    <section class="section background-white" >  
+      <div class="line">
+        <h2 class="text-size-50  text-m-size-40 text-center">Our Stats</h2>
+        <hr class="break-small background-primary break-center">
+        <div class="margin margin-top-bottom-50">
+          <div class="s-12 m-12 l-3">
+            <div class="block">
+              <div class="count-to">
+                <span class="timer h1 text-size-50  text-m-size-40">1500</span>
+                <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Eodem modo typi</p> 
+              </div>
+            </div>
+          </div>
+          <div class="s-12 m-12 l-3">
+            <div class="block">
+              <div class="count-to">
+                <span class="timer h1 text-size-50  text-m-size-40">95%</span>
+                <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Duis autem</p> 
+              </div>
+            </div>
+          </div>
+          <div class="s-12 m-12 l-3">
+            <div class="block">
+              <div class="count-to">
+                <span class="timer h1 text-size-50  text-m-size-40">287</span>
+                <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Mirum est notare</p> 
+              </div>
+            </div>
+          </div>
+          <div class="s-12 m-12 l-3">
+            <div class="block">
+              <div class="count-to">
+                <span class="timer h1 text-size-50  text-m-size-40">7 milion</span>
+                <p class="h1 text-size-20 margin-top-10 text-dark text-thin">Nam liber tempor</p> 
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+    
+    <hr class="break margin-top-bottom-0">
+    
+    <!-- Section 4 -->
+    <section class="section-top-padding full-width">
+      <h2 class="text-size-50  text-m-size-40 text-center">Our Work</h2>
+      <hr class="break-small background-primary break-center"> 
+      <div class="tabs background-primary-hightlight">
+          <div class="tab-item tab-active">
+            <a class="tab-label active-btn">{{works_main.0.title}}</a>
+            <div class="tab-content lightbox-gallery">
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{web_design1.0.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{web_design1.0.title}}</h2> 
+                      <p>{{web_design1.0.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{web_design1.0.image.url}}" alt="" title="{{web_design1.0.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{web_design2.0.url_video}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{web_design2.0.title}}</h2> 
+                      <p>{{web_design2.0.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{web_design2.0.image.url}}" alt="" title="{{web_design2.0.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{web_design1.1.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{web_design1.1.title}}</h2> 
+                      <p>{{web_design1.1.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{web_design1.1.image.url}}" alt="" title="{{web_design1.1.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{web_design1.2.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{web_design1.2.title}}</h2> 
+                      <p>{{web_design1.2.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{web_design1.2.image.url}}" alt="" title="{{web_design1.2.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{web_design2.1.url_video}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{web_design2.1.title}}</h2> 
+                      <p>{{web_design2.1.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{web_design2.1.image.url}}" alt="" title="{{web_design2.1.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{web_design1.3.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{web_design1.3.title}}</h2> 
+                      <p>{{web_design1.3.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{web_design1.3.image.url}}" alt="" title="{{web_design1.3.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{web_design1.4.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{web_design1.4.title}}</h2> 
+                      <p>{{web_design1.4.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{web_design1.4.image.url}}" alt="" title="{{web_design1.4.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{web_design1.5.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{web_design1.5.title}}</h2> 
+                      <p>{{web_design1.5.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{web_design1.5.image.url}}" alt="" title="{{web_design1.5.image_title}}" />
+                </a>	
+              </div>
+            </div>  
+          </div>
+          <div class="tab-item">
+            <a class="tab-label">{{works_main.1.title}}</a>
+            <div class="tab-content lightbox-gallery">
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{graphic_design2.0.url_video}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{graphic_design2.0.title}}</h2> 
+                      <p>{{graphic_design2.0.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{graphic_design2.0.image.url}}" alt="" title="{{graphic_design2.0.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{graphic_design1.0.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{graphic_design1.0.title}}</h2> 
+                      <p>{{graphic_design1.0.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{graphic_design1.0.image.url}}" alt="" title="{{graphic_design1.0.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{graphic_design1.1.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{graphic_design1.1.title}}</h2> 
+                      <p>{{graphic_design1.1.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{graphic_design1.1.image.url}}" alt="" title="{{graphic_design1.1.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{graphic_design1.2.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{graphic_design1.2.title}}</h2> 
+                      <p>{{graphic_design1.2.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{graphic_design1.2.image.url}}" alt="" title="{{graphic_design1.2.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{graphic_design2.1.url_video}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{graphic_design2.1.title}}</h2> 
+                      <p>{{graphic_design2.1.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{graphic_design2.1.image.url}}" alt="" title="{{graphic_design2.1.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{graphic_design1.3.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{graphic_design1.3.title}}</h2> 
+                      <p>{{graphic_design1.3.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{graphic_design1.3.image.url}}" alt="" title="{{graphic_design1.3.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{graphic_design1.4.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{graphic_design1.4.title}}</h2> 
+                      <p>{{graphic_design1.4.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{graphic_design1.4.image.url}}" alt="" title="{{graphic_design1.4.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{graphic_design2.2.url_video}}" >
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{graphic_design2.2.title}}</h2> 
+                      <p>{{graphic_design2.2.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{graphic_design2.2.image.url}}" alt="" title="{{graphic_design2.2.image_title}}" />
+                </a>	
+              </div>
+            </div>  
+          </div>
+          <div class="tab-item">
+            <a class="tab-label">{{works_main.2.title}}</a>
+            <div class="tab-content lightbox-gallery">
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{campaigns1.0.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{campaigns1.0.title}}</h2> 
+                      <p>{{campaigns1.0.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{campaigns1.0.image.url}}" alt="" title="{{campaigns1.0.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{campaigns1.1.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{campaigns1.1.title}}</h2> 
+                      <p>{{campaigns1.1.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{campaigns1.1.image.url}}" alt="" title="{{campaigns1.1.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{campaigns2.0.url_video}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{campaigns2.0.title}}</h2> 
+                      <p>{{campaigns2.0.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{campaigns2.0.image.url}}" alt="" title="{{campaigns2.0.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{campaigns1.2.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{campaigns1.2.title}}</h2> 
+                      <p>{{campaigns1.2.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{campaigns1.2.image.url}}" alt="" title="{{campaigns1.2.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{campaigns1.3.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{campaigns1.3.title}}</h2> 
+                      <p>{{campaigns1.3.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{campaigns1.3.image.url}}" alt="" title="{{campaigns1.3.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{campaigns1.4.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{campaigns1.4.title}}</h2> 
+                      <p>{{campaigns1.4.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{campaigns1.4.image.url}}" alt="" title="{{campaigns1.4.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="i{{campaigns2.1.url_video}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{campaigns2.1.title}}</h2> 
+                      <p>{{campaigns2.1.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{campaigns2.1.image.url}}" alt="" title="{{campaigns2.1.image_title}}" />
+                </a>	
+              </div>
+              <div class="s-12 m-6 l-3">
+                <a class="image-with-hover-overlay image-hover-zoom" href="{{campaigns1.5.url_image}}">
+                  <div class="image-hover-overlay background-primary"> 
+                    <div class="image-hover-overlay-content text-center padding-2x">
+                      <h2 class="text-thin">{{campaigns1.5.title}}</h2> 
+                      <p>{{campaigns1.5.description}}</p> 
+                    </div> 
+                  </div> 
+                  <img src="{{campaigns1.5.image.url}}" alt="" title="{{campaigns1.5.image_title}}" />
+                </a>	
+              </div>
+            </div>  
+          </div>
+      </div>
+    </section>
+    
+    <!-- Section 5 -->    
+    <section class="section background-white text-center">
+      <div class="line">
+        <h2 class="text-size-50  text-m-size-40 text-center">{{testimonials.title}}</h2>
+        <hr class="break-small background-primary break-center">
+        <div class="carousel-default owl-carousel carousel-wide-arrows">
+          {% for testimonials in testimonials_blocks %}
+            <div class="item">
+              <div class="s-12 m-12 l-7 center text-center">
+                <img class="image-testimonial-small" src="{{testimonials.image.url}}" alt="">
+                <p class="h1 margin-bottom text-size-20">{{testimonials.description1}}</p>
+                <p class="h1 text-size-16">{{testimonials.description2}}</p>
+              </div>
+            </div>
+          {% endfor %}
+
+          {% comment %} <div class="item"> 
+            <div class="s-12 m-12 l-7 center text-center">
+              <img class="image-testimonial-small" src="{{testimonials_blocks.1.image.url}}" alt="">
+              <p class="h1 margin-bottom text-size-20">{{testimonials_blocks.1.description1}}</p>
+              <p class="h1 text-size-16">{{testimonials_blocks.1.description2}}</h5>
+            </div>
+          </div>
+          <div class="item">
+            <div class="s-12 m-12 l-7 center text-center">
+              <img class="image-testimonial-small" src="{{testimonials_blocks.2.image.url}}" alt="">
+              <p class="h1 margin-bottom text-size-20">{{testimonials_blocks.2.description1}}</p>
+              <p class="h1 text-size-16">{{testimonials_blocks.2.description2}}</p>
+            </div>
+          </div> {% endcomment %}
+
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}      
