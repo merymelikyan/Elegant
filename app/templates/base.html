@@ -20,7 +20,7 @@
     
     <body class="size-1140">
       <!-- PREMIUM FEATURES BUTTON -->
-      <a target="_blank" class="hide-s" href="{% static "../template/eleganter-premium-responsive-business-template/" %}" style="position:fixed;top:120px;right:-14px;z-index:10;">
+      <a target="_blank" class="hide-s" href="{% url "premium"}" style="position:fixed;top:120px;right:-14px;z-index:10;">
         <img src="{% static "img/premium-features.png" %}" alt=""></a>
       <!-- HEADER -->
       <header role="banner" class="position-absolute">    
@@ -53,6 +53,7 @@
               <li><a href="{% url 'about' %}">About</a></li>
               <li><a href="{% url 'gallery' %}">Gallery</a></li>
               <li><a href="{% url 'contact' %}">Contact</a></li>
+              <li><a href="{% url 'premium' %}">Premium</a></li>
             </ul>
           </div>
         </nav>
@@ -70,7 +71,7 @@
       <footer>
         <!-- Contact Us -->
         <div class="background-primary padding text-center">
-          <p class="h1">Contact Us: 0800 787 787</p>                                                                        
+          <p class="h1">{{contact_us_main.title}}</p>                                                                        
         </div>
         
         <!-- Main Footer -->
@@ -87,31 +88,31 @@
             <div class="padding-2x">
               <div class="line">              
                 <div class="float-left">
-                    <i class="icon-sli-location-pin text-primary icon3x"></i>
+                    <i class="{{address.icon_class}}"></i>
                   </div>
                   <div class="margin-left-70 margin-bottom-30">
-                    <h3 class="margin-bottom-0">Company Address</h3>
-                    <p>Responsive Street 7<br>
-                      London / United Kingdom / Europe
+                    <h3 class="margin-bottom-0">{{address.title}}</h3>
+                    <p>{{address.description1}}<br>
+                      {{address.description2}}
                     </p>               
                   </div>
                   <div class="float-left">
-                    <i class="icon-sli-envelope text-primary icon3x"></i>
+                    <i class="{{email.icon_class}}"></i>
                   </div>
                   <div class="margin-left-70 margin-bottom-30">
-                    <h3 class="margin-bottom-0">E-mail</h3>
-                    <p>contact@sampledomain.com<br>
-                      office@sampledomain.com
+                    <h3 class="margin-bottom-0">{{email.title}}</h3>
+                    <p>{{email.description1}}<br>
+                      {{email.description2}}
                     </p>              
                   </div>
                   <div class="float-left">
-                    <i class="icon-sli-phone text-primary icon3x"></i>
+                    <i class="{{phone.icon_class}}"></i>
                   </div>
                   <div class="margin-left-70">
-                    <h3 class="margin-bottom-0">Phone Numbers</h3>
-                    <p>0800 4521 800 50<br>
-                      0450 5896 625 16<br>
-                      0798 6546 465 15
+                    <h3 class="margin-bottom-0">{{phone.title}}</h3>
+                    <p>{{phone.phone_namber1}}<br>
+                      {{phone.phone_namber2}}<br>
+                      {{phone.phone_namber3}}
                     </p>             
                   </div>
               </div>
@@ -127,7 +128,8 @@
             <p class="text-size-12">{{footer_text.text2}}</p>
           </div>
           <div class="s-12 l-6">
-            <a class="right text-size-12" href="{{footer_text.link_url}}" title="Responsee - lightweight responsive framework">{{footer_text.link_name1}}<br> {{footer_text.link_name2}}</a>
+            <a class="right text-size-12" href="{{footer_text.link_url}}" title="Responsee - lightweight responsive framework">
+              {{footer_text.link_name1}}<br> {{footer_text.link_name2}}</a>
           </div>
         </section>
       </footer>

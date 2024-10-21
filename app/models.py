@@ -256,9 +256,259 @@ class TestimonialsBlocks(models.Model):
         verbose_name_plural = "Testimonials blocks"
 
 
+class ContactUsMain(models.Model):
+    title = models.CharField(max_length=255)
+ 
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "ContactUsMain"
+        verbose_name_plural = "ContactUsMain"
+
+
+class Address(models.Model):
+    title = models.CharField(max_length=255)
+    icon_class = models.CharField(max_length=255)
+    description1 = models.CharField(max_length=255, blank=True, null=True) 
+    description2 = models.CharField(max_length=255, blank=True, null=True)
+    
+   
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "Address"
+        verbose_name_plural = "Address"
+
+
+class Email(models.Model):
+    title = models.CharField(max_length=255)
+    icon_class = models.CharField(max_length=255)
+    description1 = models.CharField(max_length=255, blank=True, null=True) 
+    description2 = models.CharField(max_length=255, blank=True, null=True)
+    
+   
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "Email"
+        verbose_name_plural = "Email"
+
+
+class Phone(models.Model):
+    title = models.CharField(max_length=255)
+    icon_class = models.CharField(max_length=255)
+    phone_number1 = models.CharField(max_length=255, blank=True, null=True) 
+    phone_number2 = models.CharField(max_length=255, blank=True, null=True)
+    phone_number3 = models.CharField(max_length=255, blank=True, null=True)
+   
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "Phone"
+        verbose_name_plural = "Phone"
+
+
+class Contact(models.Model):
+    title = models.CharField(max_length=255)
+    description1 = models.CharField(max_length=255, blank=True, null=True) 
+    description2 = models.CharField(max_length=255, blank=True, null=True)
+ 
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "Contact"
+        verbose_name_plural = "Contact"
+
+
+class ContactAddress(models.Model):
+    title = models.CharField(max_length=255)
+    icon_class = models.CharField(max_length=255)
+    description1 = models.CharField(max_length=255, blank=True, null=True) 
+    description2 = models.CharField(max_length=255, blank=True, null=True)
+    
+   
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "Contact Address"
+        verbose_name_plural = "Contact Address"
+
+
+class ContactEmail(models.Model):
+    title = models.CharField(max_length=255)
+    icon_class = models.CharField(max_length=255)
+    description1 = models.CharField(max_length=255, blank=True, null=True) 
+    description2 = models.CharField(max_length=255, blank=True, null=True)
+    
+   
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "Contact Email"
+        verbose_name_plural = "Contact Email"
+
+
+class ContactPhone(models.Model):
+    title = models.CharField(max_length=255)
+    icon_class = models.CharField(max_length=255)
+    phone_number1 = models.CharField(max_length=255, blank=True, null=True) 
+    phone_number2 = models.CharField(max_length=255, blank=True, null=True)
+    phone_number3 = models.CharField(max_length=255, blank=True, null=True)
+   
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "Contact Phone"
+        verbose_name_plural = "Contact Phone"
+
+
+
+class Gallery(models.Model):
+    title = models.CharField(max_length=255)
+    description1 = models.CharField(max_length=255, blank=True, null=True) 
+    description2 = models.CharField(max_length=255, blank=True, null=True)
+    
+   
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "Gallery"
+        verbose_name_plural = "Gallery"
+
+
+
+class GalleryBlocks(models.Model):
+    description = models.CharField(max_length=255, blank=True, null=True) 
+    image_title = models.CharField(max_length=255, blank=True, null=True)
+    image = models.ImageField(upload_to="block.image.url", blank=True, null=True)
+   
+    def __str__(self):
+        return self.image_title
+    
+    class Meta:
+        verbose_name = "Gallery Blocks"
+        verbose_name_plural = "Gallery Blocks"        
 
 
 
 
+class AboutMain(models.Model):
+    title = models.CharField(max_length=255)
+    description1 = models.CharField(max_length=555, blank=True, null=True)
+    description2 = models.CharField(max_length=555, blank=True, null=True)
+
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "About Main"
+        verbose_name_plural = "About Main" 
 
 
+class About(models.Model):
+    title1 = models.CharField(max_length=255, blank=True, null=True)
+    title2 = models.CharField(max_length=255, blank=True, null=True)
+    description1 = models.CharField(max_length=2000, blank=True, null=True)
+    description2 = models.CharField(max_length=2000, blank=True, null=True)
+    image1 = models.ImageField(upload_to="about_image.image.url", blank=True, null=True)
+    description3 = models.CharField(max_length=2000, blank=True, null=True)
+    image2 = models.ImageField(upload_to="about_image.image.url", blank=True, null=True)
+    description4 = models.CharField(max_length=2000, blank=True, null=True)
+    
+    def __str__(self):
+        return f"{self.title1}, {self.title2}"
+    
+    class Meta:
+        verbose_name = "About"
+        verbose_name_plural = "About"            
+
+
+
+class OpeningHours(models.Model):
+    title = models.CharField(max_length=60)
+    days1 = models.CharField(max_length=60)
+    days2 = models.CharField(max_length=60)
+    days3 = models.CharField(max_length=60)
+    days4 = models.CharField(max_length=60)
+    days5 = models.CharField(max_length=60)
+    days6 = models.CharField(max_length=60)
+    open_time1 = models.CharField(max_length=60)
+    open_time2 = models.CharField(max_length=60)
+    open_time3 = models.CharField(max_length=60)
+    open_time4 = models.CharField(max_length=60)
+    open_time5 = models.CharField(max_length=60)
+    open_time6 = models.CharField(max_length=60)
+    close_day = models.CharField(max_length=60)
+    close_time = models.CharField(max_length=60)
+
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "Opening Hours"
+        verbose_name_plural = "Opening Hours"       
+
+
+
+class Products(models.Model):
+    title1 = models.CharField(max_length=255)
+    description1 = models.CharField(max_length=2000, blank=True, null=True) 
+    description2 = models.CharField(max_length=2000, blank=True, null=True)
+    title2 = models.CharField(max_length=200)
+    description3 = models.CharField(max_length=2000, blank=True, null=True) 
+   
+    def __str__(self):
+      return f"{self.title1}, {self.title2}"
+    
+    class Meta:
+        verbose_name = "Products"
+        verbose_name_plural = "Products"
+
+
+
+class ProductsBlocks(models.Model):
+    title = models.CharField(max_length=255)
+    description = models.CharField(max_length=2000) 
+    icon_class = models.CharField(max_length=255, blank=True, null=True)
+    
+   
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "Products Blocks"
+        verbose_name_plural = "Products Blocks"        
+
+
+
+class PremiumMain(models.Model):
+    title = models.CharField(max_length=255)
+ 
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "Premium Main"
+        verbose_name_plural = "Premium Main"        
+
+
+class Premium(models.Model):
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to="premium")
+ 
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "Premium"
+        verbose_name_plural = "Premium"                
